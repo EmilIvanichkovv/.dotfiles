@@ -5,19 +5,24 @@
     google-chrome firefox # opera
 
     ## Audio & video players:
-    spotify vlc mpv
+    spotify
+    vlc
+    # mpv
+
+    ## Streaming
+    obs-studio
 
     ## Office:
     # libreoffice
     onlyoffice-bin
-    xournal
+    # xournal
 
     ## IM / Video:
     discord
-    slack
+    # slack
     unstablePkgs.tdesktop
-    # teams
-    zoom-us
+    teams
+    # zoom-us
 
     ## Text editors / IDEs
     unstablePkgs.vscode
@@ -31,7 +36,8 @@
     # teamviewer
 
     ## P2P:
-    deluge transmission-gtk
+    # deluge
+    transmission-gtk
 
     ## Terminal emulators:
     # alacritty
@@ -41,21 +47,26 @@
     # reaper audacity
 
     ## 3D modeling:
-    blender
+    # blender
 
     ## Image editing:
-    gimp inkscape
+    # gimp inkscape
     pick-colour-picker
-    gcolor3
+    # gcolor3
 
     ## X11, OpenGL, Vulkan:
     xclip
     xorg.xhost
     glxinfo
-    vulkan-tools
+    # vulkan-tools
 
     ## System:
     gparted
     wireshark-qt
+
+    ## Razer
+    # openrazer
+    # openrezer_deamon
+    # razergenie
   ];
 }

@@ -40,5 +40,7 @@
     tree
     jq
     direnv
+    lsof
+    lshw
   ];
 }
