@@ -9,7 +9,7 @@
     #numix-gtk-theme
     #numix-sx-gtk-theme
     #onestepback
-    #plano-theme
+    plano-theme
     #plata-theme
     qogir-theme
     #shades-of-gray-theme
