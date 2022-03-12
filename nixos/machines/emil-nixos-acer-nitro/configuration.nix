@@ -1,6 +1,6 @@
 { config, pkgs, ... }:
 {
-  networking.hostName = "acer-nitro5-nixos";
+  networking.hostName = "emil-nixos-acer-nitro";
 
   networking.useDHCP = false;
   networking.interfaces.enp3s0f1.useDHCP = true;
@@ -22,8 +22,6 @@
       ../../sys/ledger-nano-udev-rules.nix
       ../../sys/packages.nix
 
-      # Include https://github.com/nix-community/home-manager
-      <home-manager/nixos>
     ];
 
   # This value determines the NixOS release from which the default
