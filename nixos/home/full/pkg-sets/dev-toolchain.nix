@@ -9,26 +9,44 @@
 {
   home.packages = with pkgs; [
     ## Build systems:
-    # cmake gnumake ninja meson
+    # ninja
+    # meson
+    # cmake
+    gnumake
 
     ## Debuggers:
-    # gdb lldb_13
+    gdb
+    # lldb_13
 
     ## C/C++ toolchain:
     # GCC9 should have the highest priority
     # (lib.setPrio 30 binutils) (lib.setPrio 20 clang_11) (lib.setPrio 10 gcc10) lld_11
+    gcc
 
     ## Haskell
     # ghc
 
+    ## Java
+    jdk
+
+    ## Javascript related
+    nodejs
+    yarn
+    sassc
+
     ## Python
-    # python3
+    python3
 
     ## crypto & network
     # nethogs # monitoring
 
     ## D toolchain:
-    #unstablePkgs.dmd unstablePkgs.dub unstablePkgs.ldc
+    dmd
+    dtools
+    # unstablePkgs.dmd unstablePkgs.dub unstablePkgs.ldc
+
+    ## IDE Support
+    ctags
 
     ## DevOps:
     dbeaver
