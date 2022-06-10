@@ -32,11 +32,9 @@
     nix-on-droid,
     ...
   }: let
-    username = "Emil";
-    host = "emil-nixos-acer-nitro";
     system = "x86_64-linux";
-    defaultUser = "zlx";
-    users = [defaultUser];
+    defaultUser = "Emil";
+    users = ["zlx" defaultUser];
 
     pkgs = nixpkgs.legacyPackages.${system};
 

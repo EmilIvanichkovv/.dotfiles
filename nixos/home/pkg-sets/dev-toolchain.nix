@@ -38,8 +38,8 @@
     # nethogs # monitoring
 
     ## D toolchain:
-    dmd
-    dtools
+    # dmd
+    # dtools
     # unstablePkgs.dmd unstablePkgs.dub unstablePkgs.ldc
 
     ## IDE Support
