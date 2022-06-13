@@ -4,5 +4,7 @@
     gh
     # qrencode
     # w3m
+    yq
+    jq
   ];
 }
