@@ -196,22 +196,22 @@ password of the default user:
 6. Copy the `dotfiles` repo inside the user's home dir:
 
    ```sh
-   mkdir -p /mnt/home/zlx/code/repos
-   cp -a ../dotfiles /mnt/home/zlx/code/repos
+   mkdir -p /mnt/home/$User/code/repos
+   cp -a ../dotfiles /mnt/home/$User/code/repos
    ```
 
 7. Build the home-manager config and copy it to the new Nix Store:
 
    ```sh
-   nix build '.#homeConfigurations.zlx.activationPackage'
+   nix build ".#homeConfigurations.$User.activationPackage"
    sudo nix copy --to /mnt ./result/ --no-check-sigs
    ```
 
 8. Reboot into the new Nix install, open a terminal, cd into the dotfiles dir and activate the home-manager config:
 
    ```sh
-   cd /home/zlx/code/repos/dotfiles
-   nix path-info '.#homeConfigurations.zlx.activationPackage' | xargs -I@@ sh -c '@@/activate'
+   cd /home/$User/code/repos/dotfiles
+   nix path-info ".#homeConfigurations.$User.activationPackage" | xargs -I@@ sh -c '@@/activate'
    ```
 
 9. You're done!
