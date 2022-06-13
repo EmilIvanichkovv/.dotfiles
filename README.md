@@ -134,9 +134,9 @@ installer](https://nixos.org/download.html#nixos-iso) or an existing NixOS insta
         extraOptions = ''
           experimental-features = nix-command flakes
         '';
-      };  
+      };
     }
-    ``` 
+    ```
     These settings will ensure that you're using a recent enough version of
     Nix with the necessary features enabled.
 
@@ -159,10 +159,7 @@ there, run:
   ```bash
   mkdir ./nixos/machines/zlx-nixos-desktop3
   sudo nixos-generate-config --root /mnt --dir  /..$(git rev-parse --show-toplevel)/nixos/machines/zlx-nixos-desktop3
-
-  sudo nixos-install --impure --flake '.#zlx-nixos-desktop3' --root /mnt
   ```
-
   </dd>
 
   <dt>Fish ⋊&gt;</dt>
@@ -170,9 +167,30 @@ there, run:
 
   ```fish
   mkdir ./nixos/machines/zlx-nixos-desktop3
-
   sudo nixos-generate-config --root /mnt --dir  /..(git rev-parse --show-toplevel)/nixos/machines/zlx-nixos-desktop3
+  ```
+  </dd>
 
+  Your files were automatically generated. Now they could be manually changed!
+  > note: Do not forget to set random `hostId`. You can use the following command for generation:
+  > ```
+  > tr -dc 0-9a-f < /dev/urandom | head -c 8
+  > ```
+
+  With everything configured we can continue with:
+
+  <dt>Bash $</dt>
+  <dd>
+
+  ```bash
+  sudo nixos-install --impure --flake '.#zlx-nixos-desktop3' --root /mnt
+  ```
+  </dd>
+
+  <dt>Fish ⋊&gt;</dt>
+  <dd>
+
+  ```fish
   sudo nixos-install --impure --flake '.#zlx-nixos-desktop3' --root /mnt
   ```
 
@@ -196,22 +214,22 @@ password of the default user:
 6. Copy the `dotfiles` repo inside the user's home dir:
 
    ```sh
-   mkdir -p /mnt/home/$User/code/repos
-   cp -a ../dotfiles /mnt/home/$User/code/repos
+   mkdir -p /mnt/home/$USER/code/repos
+   cp -a ../dotfiles /mnt/home/$USER/code/repos
    ```
 
 7. Build the home-manager config and copy it to the new Nix Store:
 
    ```sh
-   nix build ".#homeConfigurations.$User.activationPackage"
+   nix build ".#homeConfigurations.$USER.activationPackage"
    sudo nix copy --to /mnt ./result/ --no-check-sigs
    ```
 
 8. Reboot into the new Nix install, open a terminal, cd into the dotfiles dir and activate the home-manager config:
 
    ```sh
-   cd /home/$User/code/repos/dotfiles
-   nix path-info ".#homeConfigurations.$User.activationPackage" | xargs -I@@ sh -c '@@/activate'
+   cd /home/$USER/code/repos/dotfiles
+   nix path-info ".#homeConfigurations.$USER.activationPackage" | xargs -I@@ sh -c '@@/activate'
    ```
 
 9. You're done!
