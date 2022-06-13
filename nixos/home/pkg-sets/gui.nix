@@ -21,7 +21,7 @@
     discord
     # slack
     unstablePkgs.tdesktop
-    teams
+    # teams
     # zoom-us
 
     ## Text editors / IDEs

@@ -24,12 +24,12 @@
     # ghc
 
     ## Java
-    jdk
+    # jdk
 
     ## Javascript related
-    nodejs
-    yarn
-    sassc
+    # nodejs
+    # yarn
+    # sassc
 
     ## Python
     python3
