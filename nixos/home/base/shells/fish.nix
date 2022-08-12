@@ -95,6 +95,10 @@
         end
       end
 
+      function cdls
+          cd $argv && ls -la
+      end
+
     '';
 
     shellAbbrs = {
