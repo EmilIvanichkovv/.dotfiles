@@ -144,6 +144,8 @@
       gchp = "git cherry-pick";
       gchpc = "git cherry-pick --continue";
 
+      grv = "git remote -v";
+
       # Google Chrome aliases:
       igchr = "google-chrome --incognito & disown";
     };
