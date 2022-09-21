@@ -33,6 +33,8 @@
     '';
 
     interactiveShellInit = ''
+      set -gx PATH $CODE/.nimsuggest_bin/nim/bin $PATH
+
       # bobthefish theme settings:
       set -g theme_newline_cursor yes
       set -g theme_date_format "+%H:%M:%S %F (%a)"
@@ -97,6 +99,10 @@
 
       function cdls
           cd $argv && ls -la
+
+      # add nimsiggest to PATH
+      fish_add_path -g ~/code/.nimsuggest_bin/nim/bin
+
       end
 
     '';
