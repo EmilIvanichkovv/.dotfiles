@@ -167,6 +167,9 @@
 
       # Google Chrome aliases:
       igchr = "google-chrome --incognito & disown";
+
+      # xcpil aliases:
+      copy = "xclip -selection clipboard ";
     };
   };
 }
