@@ -1,0 +1,78 @@
+{
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "One Monokai",
+  "d.servedPath": "/home/emil/.local/share/code-d/bin/serve-d",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "cSpell.enableFiletypes": ["nim"],
+  "cSpell.userWords": [
+    "avrodll",
+    "cdecl",
+    "deserialization",
+    "dynlib",
+    "elif",
+    "errstr",
+    "importc",
+    "importcpp",
+    "keymanager",
+    "polkadot",
+    "pubkey",
+    "pubkeys"
+  ],
+  "files.trimTrailingWhitespace": true,
+  "editor.fontFamily": "'FuraCode Nerd Font', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+  "workbench.list.smoothScrolling": true,
+  "editor.smoothScrolling": true,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+
+  "workbench.tree.indent": 15,
+  "workbench.colorCustomizations": {
+    "editor.selectionBackground": "#ff7b0023",
+    "editor.selectionHighlightBackground": "#0f92cf52",
+    "editor.findMatchBackground": "#007185a8",
+    "editor.findMatchHighlightBackground": "#ff7b0038",
+
+    "editorLineNumber.foreground": "#ff6500",
+    "editorLineNumber.activeForeground": "#26a9c7",
+    // "editor.selectionHighlightBorder" :"#ff6500",
+    "activityBar.foreground": "#ff6500",
+
+    "editorRuler.foreground": "#ff66007e"
+
+    // Git
+  },
+
+  "editor.rulers": [80, 120],
+  "workbench.editorAssociations": {
+    "*.db": "default"
+  },
+
+  "terminal.integrated.scrollback": 1000000,
+
+  "nim.logNimsuggest": true,
+  "nim.useNimsuggestCheck": true,
+  "nim.enableNimsuggest": true,
+  "nim.provider": "lsp",
+  "projectPath": {
+    "projectPath": "main.nim",
+    "fileRegex": ".*\\.nim"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "liveServer.settings.CustomBrowser": "firefox",
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "explorer.confirmDelete": false,
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "window.zoomLevel": 1,
+  "typescript.updateImportsOnFileMove.enabled": "always"
+}
