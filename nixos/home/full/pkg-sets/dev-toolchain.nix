@@ -48,6 +48,8 @@
     ## IDE Support
     ctags
 
+    dbeaver
+
     ## DevOps:
     dbeaver
     # azure-cli

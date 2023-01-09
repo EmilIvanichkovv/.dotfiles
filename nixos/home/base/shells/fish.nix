@@ -24,7 +24,7 @@
     ];
 
     interactiveShellInit = ''
-      set -gx PATH $CODE/.nimsuggest_bin/nim/bin $PATH
+      # set -gx PATH $CODE/.nimsuggest_bin/nim/bin $PATH
 
       # bobthefish theme settings:
       set -g theme_newline_cursor yes
