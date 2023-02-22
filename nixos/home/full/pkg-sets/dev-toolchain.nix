@@ -30,7 +30,7 @@
     # jdk
 
     ## Javascript related
-    # nodejs
+    nodejs
     # yarn
     # sassc
 
@@ -47,8 +47,6 @@
 
     ## IDE Support
     ctags
-
-    dbeaver
 
     ## DevOps:
     dbeaver
