@@ -30,7 +30,7 @@
     # jdk
 
     ## Javascript related
-    # nodejs
+    nodejs
     # yarn
     # sassc
 
