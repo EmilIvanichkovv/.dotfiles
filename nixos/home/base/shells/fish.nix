@@ -170,6 +170,9 @@
 
       # xcpil aliases:
       copy = "xclip -selection clipboard ";
+
+      #tilix aliases:
+      work2 = "tilix --session $CODE/tilix_work2_session.json && exit";
     };
   };
 }
