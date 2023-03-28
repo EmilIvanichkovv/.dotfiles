@@ -4,7 +4,7 @@
     CODE = "${config.home.homeDirectory}/code";
     TMPCODE = "${CODE}/tmp";
     REPOS = "${CODE}/repos";
-    CFG = "${REPOS}/dotfiles";
+    CFG = "${REPOS}/.dotfiles";
     DLANG = "${REPOS}/dlang";
     WORK = "${REPOS}/metacraft-labs";
     MINE = "${REPOS}/mine";
