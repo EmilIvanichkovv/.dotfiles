@@ -5,5 +5,6 @@
     # qrencode
     # w3m
     pv
+    killall
   ];
 }
