@@ -23,10 +23,10 @@
 
     ## IM / Video:
     discord
-    # slack
+    slack
     unstablePkgs.tdesktop
-    # teams
-    # zoom-us
+    teams
+    zoom-us
 
     ## Text editors / IDEs
     unstablePkgs.vscode
