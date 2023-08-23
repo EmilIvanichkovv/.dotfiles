@@ -4,18 +4,20 @@ in {
   fileSystems =
     {
       "/boot" = {
-        device = "/dev/disk/by-partuuid/acf96bb6-526e-4e84-901a-2ed332e9fd83" ;
+        device = "/dev/disk/by-partuuid/acf96bb6-526e-4e84-901a-2ed332e9fd83";
         fsType = "vfat";
       };
     }
-    // zfsFileSystems [
-      "nixos"
-      "nixos/nix"
-      "nixos/var"
-      "nixos/var/lib"
-      "nixos/var/lib/docker"
-      "userdata/home"
-    ];
+    // (zfsFileSystems {
+      datasets = [
+        "nixos"
+        "nixos/nix"
+        "nixos/var"
+        "nixos/var/lib"
+        "nixos/var/lib/docker"
+        "userdata/home"
+      ];
+    });
 
   swapDevices = [
     {
