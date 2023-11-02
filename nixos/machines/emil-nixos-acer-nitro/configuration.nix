@@ -1,11 +1,18 @@
-{
+{pkgs, ...}: {
   networking.hostId = "1c97103b";
 
   services.zfs = {
     trim.enable = true;
     autoScrub.enable = true;
-    autoScrub.pools = [ "zfs_root" ];
+    autoScrub.pools = ["zfs_root"];
   };
+
+  environment.systemPackages = let
+    libopenrazer = pkgs.libsForQt5.callPackage ./libopenrazer.nix {};
+    razergenie = pkgs.libsForQt5.callPackage ./razer.nix {inherit libopenrazer;};
+  in [
+    razergenie
+  ];
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
