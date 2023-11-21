@@ -2,7 +2,6 @@
   networking.networkmanager.enable = true;
   networking.networkmanager.dns = "none";
   networking.nameservers = ["1.1.1.1"];
-
   networking.wireguard.enable = true;
 
   services = {
@@ -11,6 +10,6 @@
   };
 
   # Open ports in the firewall.
-  # networking.firewall.allowedTCPPorts = [ ... ];
+  networking.firewall.allowedTCPPorts = [9944];
   # networking.firewall.allowedUDPPorts = [ ... ];
 }
